@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: '맑은 고딕', 'Malgun Gothic', 'Noto Sans KR', sans-serif;
+    background-color: #faf6f0;
+    color: #332211;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* 카페 입력 필드 공통 스타일: 너비 100%, 패딩 10px, 둥근 모서리 8px, 포커스 시 갈색 테두리 및 연한 그림자 */
+.cafe-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d4c3b3;
+  background-color: #ffffff;
+  font-size: 15px;
+  color: #332211;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.cafe-input:focus {
+  border-color: #6b4226;
+  box-shadow: 0 0 0 3px rgba(107, 66, 38, 0.18);
+}
+
+/* 주문하기 버튼: 갈색 배경(#6b4226), 흰색 글씨, hover 시 약간 밝게 */
+.cafe-btn-primary {
+  background-color: #6b4226;
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cafe-btn-primary:hover {
+  background-color: #855230;
+}
+
+.cafe-btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* 다시 작성 버튼 */
+.cafe-btn-secondary {
+  background-color: #e8ded4;
+  color: #55341d;
+  transition: all 0.2s ease;
+}
+
+.cafe-btn-secondary:hover {
+  background-color: #dacbc0;
+}
+
+/* 부드러운 그림자 */
+.cafe-card-shadow {
+  box-shadow: 0 10px 30px -5px rgba(107, 66, 38, 0.08), 0 4px 12px rgba(107, 66, 38, 0.04);
+}
